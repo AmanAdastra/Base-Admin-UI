@@ -1,12 +1,6 @@
-import { ThemeSwitcher } from "@/components/core/ThemeSwitcher"
-
+import UsersGraph from "@/components/Graphs/UsersGraph"
 export default function Home() {
   return (
-    <div>
-      Home yellow <ThemeSwitcher/>
-      <div className=" bg-red-400 dark:bg-pink-300">
-          Hello
-      </div>
-    </div>
+        <UsersGraph/>
   )
 }
