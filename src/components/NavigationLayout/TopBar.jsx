@@ -4,6 +4,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { sideToggle } from "@/store/GolbalStore";
 import { useAtom } from "jotai";
 import { ThemeSwitcher } from "../core/ThemeSwitcher";
+import {Avatar} from "@nextui-org/react";
 
 const TopBar = () => {
   const [toggle, setToggle] = useAtom(sideToggle);
@@ -38,8 +39,10 @@ const TopBar = () => {
         >
           <MenuOutlined style={{ fontSize: "18px", padding: "12px" }} />
         </div>
-        <div className="flex w-[80%]  justify-end pr-8">
+        <div className="flex w-[80%]  justify-end items-center pr-8">
           <ThemeSwitcher />
+          <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" className="mx-2" size="md" />
+
         </div>
       </div>
     </>

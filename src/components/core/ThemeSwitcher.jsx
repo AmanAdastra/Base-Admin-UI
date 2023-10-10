@@ -19,7 +19,7 @@ export const ThemeSwitcher = () => {
   return (
     <>
       <div
-        className="bg-gray-100 hover:bg-gray-200 dark:bg-transparent h-8 w-8 flex items-center justify-center rounded-xl"
+        className="bg-gray-100 hover:bg-gray-200 dark:bg-transparent h-10 w-10 flex items-center justify-center rounded-full"
         onClick={themeChangeHandler}
       >
         {icon ? <MoonIcon /> : <SunIcon />}

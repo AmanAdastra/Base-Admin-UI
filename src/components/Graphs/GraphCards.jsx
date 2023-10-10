@@ -21,7 +21,10 @@ const GraphCards = () => {
             <h6 className=" text-white">Total Sales</h6>
             <h2 className="text-[1.75rem] font-bold  text-white">1,678</h2>
           </div>{" "}
-          <div className=" h-full w-[50%]"></div>
+          <div className=" h-full w-[50%]">
+            {" "}
+            <SalesGraph />
+          </div>
         </div>
       </div>
       <div className="flex-1 h-[150px] bg-gradient-to-r from-[#fa5420] to-[#f6a800] m-2 p-[1.5rem] rounded-md">
@@ -30,7 +33,10 @@ const GraphCards = () => {
             <h6 className=" text-white">Total Sales</h6>
             <h2 className="text-[1.75rem] font-bold  text-white">$2,590</h2>
           </div>{" "}
-          <div className=" h-full w-[50%]"></div>
+          <div className=" h-full w-[50%]">
+            {" "}
+            <SalesGraph />
+          </div>
         </div>
       </div>
       <div className="flex-1 h-[150px] bg-gradient-to-r from-[#5b73e8] to-[#44c4fa] m-2 p-[1.5rem] rounded-md">
@@ -39,7 +45,10 @@ const GraphCards = () => {
             <h6 className=" text-white">Total Tax</h6>
             <h2 className="text-[1.75rem] font-bold  text-white">$1,954</h2>
           </div>{" "}
-          <div className=" h-full w-[50%]"></div>
+          <div className=" h-full w-[50%]">
+            {" "}
+            <SalesGraph />
+          </div>
         </div>
       </div>
     </>
