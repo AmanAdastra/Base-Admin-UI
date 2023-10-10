@@ -16,7 +16,8 @@
     "next": "13.4.19",
     "next-themes": "^0.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "recharts": "^2.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
