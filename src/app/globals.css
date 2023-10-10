@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For Firefox Browser */
+@layer base {
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full ;
+  }
+  ::-webkit-scrollbar {
+    @apply w-2  bg-gray-100;
+  }
+
+}

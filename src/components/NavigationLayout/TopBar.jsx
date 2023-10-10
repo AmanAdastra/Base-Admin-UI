@@ -16,7 +16,7 @@ const TopBar = () => {
     <>
       <div
         className={
-          "w-0 md:w-[250px] h-full items-center justify-center border-gray-200 border-1 dark:border-0 " +
+          "w-0 md:w-[250px] h-full items-center  border-gray-200 border-1 dark:border-0 " +
           (toggle ? "hidden" : "flex")
         }
       >
