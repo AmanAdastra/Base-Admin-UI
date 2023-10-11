@@ -4,10 +4,15 @@ import { MenuOutlined } from "@ant-design/icons";
 import { sideToggle } from "@/store/GolbalStore";
 import { useAtom } from "jotai";
 import { ThemeSwitcher } from "../core/ThemeSwitcher";
-import {Avatar} from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
+import { signOut } from "next-auth/react";
 
 const TopBar = () => {
   const [toggle, setToggle] = useAtom(sideToggle);
+
+  const signOutHandler = () => {
+    signOut({ callbackUrl: "/login" });
+  };
 
   const toggleHandler = () => {
     setToggle((previosState) => !previosState);
@@ -41,8 +46,12 @@ const TopBar = () => {
         </div>
         <div className="flex w-[80%]  justify-end items-center pr-8">
           <ThemeSwitcher />
-          <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" className="mx-2" size="md" />
-
+          <Avatar
+            src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+            className="mx-2 cursor-pointer"
+            size="md"
+            onClick={signOutHandler}
+          />
         </div>
       </div>
     </>
