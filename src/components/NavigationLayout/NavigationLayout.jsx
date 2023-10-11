@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import TopBar from "./TopBar";
 import { useAtom } from "jotai";
 import { sideToggle } from "@/store/GolbalStore";
@@ -7,6 +7,11 @@ import SideBar from "./SideBar";
 
 const NavigationLayout = ({ children }) => {
   const [toggle, setToggle] = useAtom(sideToggle);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  if (!isAuthenticated) {
+    return <div>{children}</div>;
+  }
 
   return (
     <div className="h-[100vh] bg-[#f7f7fb] dark:bg-[#1a1c32]">

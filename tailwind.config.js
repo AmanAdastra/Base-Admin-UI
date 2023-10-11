@@ -9,7 +9,11 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'auth-bg-image': "url('https://images.unsplash.com/photo-1496564203457-11bb12075d90')",
+      }
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
