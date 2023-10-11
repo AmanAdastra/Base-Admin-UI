@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { useAtom } from "jotai";
 import { isAuthenticated } from "@/store/GolbalStore";
 
-const page = () => {
+const Page = () => {
   const variant = "underlined";
   const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
@@ -96,7 +96,7 @@ const page = () => {
       </form>
       <div className="flex w-full h-[20%] md:h-[50%] mt-2 justify-end items-end">
         <div className="w-full text-center  text-gray-300 rounded-full py-[10px] ">
-          Don't have an Account?{" "}
+          Dont have an Account?
           <span className=" cursor-pointer text-white">Signup</span>
         </div>
       </div>
@@ -104,4 +104,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
