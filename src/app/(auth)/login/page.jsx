@@ -71,7 +71,7 @@ const Page = () => {
                   isRequired={true}
                   endContent={
                     <button
-                      className="focus:outline-none"
+                      className="focus:outline-none pr-1"
                       type="button"
                       onClick={toggleVisibility}
                     >
