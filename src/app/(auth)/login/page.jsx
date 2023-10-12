@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAtom } from "jotai";
 import { isAuthenticated } from "@/store/GolbalStore";
-
+import Image from "next/image";
 const Page = () => {
   const variant = "underlined";
   const router = useRouter();
@@ -91,16 +91,21 @@ const Page = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-500 opacity-100 text-white rounded-full py-[10px] "
+                className="w-full bg-[#205e7f] opacity-100 text-white rounded-full py-[10px] "
               >
                 Login
               </button>
             </form>
-            <div className="flex w-full h-[20%] md:h-[50%] mt-2 justify-end items-end">
+            <div className="flex w-full h-[20%] md:h-[50%] mt-2 justify-end items-end ">
               <div className="w-full text-center  text-gray-300 rounded-full py-[10px] ">
                 Dont have an Account?
                 <span className=" cursor-pointer mx-2">Signup</span>
               </div>
+            </div>
+            {/* Store Images */}
+            <div className="flex h-[40px] justify-center gap-4">
+                    <img src="/appstore.png" />
+                    <img src="/playstore.png" />
             </div>
           </div>
         </div>
