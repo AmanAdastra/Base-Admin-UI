@@ -47,8 +47,8 @@ const Page = () => {
   return (
     <>
       <div className="w-full h-full flex items-center justify-between p-4">
-        <div className=" w-[50%] h-full flex justify-center items-center ">
-          <div className="w-[50%]  ">
+        <div className=" w-[100%]  md:w-[50%] h-full flex justify-center items-center ">
+          <div className="w-[80%] md:w-[50%]  ">
             <h1 className="text-[40px] font-bold pb-[50px] text-center">
               Welcome Back
             </h1>
@@ -104,7 +104,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="bg-auth-bg-image bg-cover w-[45%] h-full rounded-[2.5rem] mx-2"></div>
+        <div className="bg-auth-bg-image bg-cover w-[45%] h-full rounded-[2.5rem] mx-2 hidden md:block"></div>
       </div>
     </>
   );
