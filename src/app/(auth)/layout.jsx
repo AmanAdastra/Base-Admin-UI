@@ -1,5 +1,5 @@
 import React from "react";
-import AuthLayout from "@/components/AuthLayoutt/AuthLayout";
+import AuthLayout from "@/components/AuthLayout/AuthLayout";
 const layout = ({ children }) => {
   return <AuthLayout>{children}</AuthLayout>;
 };
