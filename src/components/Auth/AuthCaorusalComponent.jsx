@@ -8,6 +8,7 @@ import "swiper/css";
 
 
 const AuthCaorusalComponent = () => {
+    
   return (
     <div className=" w-[45%] h-full rounded-[2.5rem] mx-2 hidden md:block">
       <Swiper
@@ -18,8 +19,11 @@ const AuthCaorusalComponent = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        style={{
+            "--swiper-navigation-color": "#000",
+            "--swiper-pagination-color": "#fff",
+          }}
+        modules={[Autoplay, Pagination]}
         spaceBetween={50}
         slidesPerView={1}
         height={"100%"}
