@@ -96,10 +96,8 @@ const LoginComponent = () => {
               className="w-full bg-[#205e7f] opacity-100 text-white rounded-full py-[10px] "
             >
               <div className="flex justify-center items-center">
-                <span> Login</span>{" "}
-                <div className={"m-0 p-0 "+ (submitLoading?"block":"hidden")}>
-                  <Spinner size="md"  />
-                </div>
+                <div> Login</div>
+                  <Spinner size="sm" className={"m-0 px-2 "+ (submitLoading?"block":"hidden")} />
               </div>
             </button>
           </form>
