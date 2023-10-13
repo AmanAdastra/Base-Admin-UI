@@ -27,7 +27,6 @@ const LoginComponent = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(credentials);
     signIn("credentials", {
       email: credentials.email,
       password: credentials.password,
@@ -35,7 +34,6 @@ const LoginComponent = () => {
       callbackUrl: "/",
     }).then((res) => {
       if (res?.error) {
-        console.log(res.error);
       } else {
         setIsAuthorized(true);
         router.push("/dashboard");

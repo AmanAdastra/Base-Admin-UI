@@ -14,7 +14,6 @@ const Page = () => {
   const { status } = useSession();
 
   useEffect(() => {
-    console.log("Inside use Effect");
     if (status != "authenticated") {
       router.push("/login");
       return () => {};
@@ -22,7 +21,6 @@ const Page = () => {
   }, [status]);
   if (status == "loading") return <LoadingComponent />;
 
-  console.log(status, "in dashboard");
 
   return (
     <>

@@ -12,12 +12,10 @@ const Page = () => {
   const router = useRouter()
 
   useEffect(()=>{
-    console.log("Inside Use Effect")
     if(status=="authenticated") router.push("/dashboard")
   },[status])
 
   if(status=="loading")return <LoadingComponent/>
-  console.log("Inside login components")
   return (
     <>
       <div className="w-full h-full flex items-center justify-between p-4">
