@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   if (["/login"].includes(path) || status!="authenticated") return <>{children}</>;
   return (
     <>
-      <NavigationLayout>{children}</NavigationLayout>;
+      <NavigationLayout>{children}</NavigationLayout>
     </>
   );
 };
