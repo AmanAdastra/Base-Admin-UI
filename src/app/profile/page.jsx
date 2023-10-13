@@ -16,7 +16,7 @@ const Page = () => {
       router.push("/login");
       return () => {};
     }
-  }, [status]);
+  }, [status,router]);
   if (status == "loading") return <LoadingComponent />;
 
   return (

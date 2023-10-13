@@ -13,7 +13,7 @@ const Page = () => {
 
   useEffect(()=>{
     if(status=="authenticated") router.push("/dashboard")
-  },[status])
+  },[status,router])
 
   if(status=="loading")return <LoadingComponent/>
   return (
