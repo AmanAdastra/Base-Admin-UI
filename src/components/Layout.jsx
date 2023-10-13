@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     console.log("Use Effect ran")
     if (status != "authenticated") return router.push("/login");
-  },[]);
+  },[session]);
 
   console.log(status, session);
 
